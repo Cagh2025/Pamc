@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    background-color: #fff;
+    padding: 50px 0;
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.content h1 {
+    color: #333;
+}
+
+.content p {
+    color: #666;
+}
+
+.content img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.3);
+    animation: float 5s ease-in-out infinite;
+}
+
+.circle-1 {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 10%;
+    animation-delay: -2s;
+}
+
+.circle-2 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: 20%;
+    animation-delay: -3s;
+}
+
+.circle-3 {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    left: 30%;
+    animation-delay: -4s;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    box-shadow: #333;
+    background-color: #666666;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+}
+
+.box {
+    width: 100%;
+    height: 60px;
+}
+
+button,
+img,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    animation: fadeIn 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

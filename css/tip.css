@@ -1,0 +1,60 @@
+/* 基本样式 */
+
+body {
+    padding: 20px;
+    position: relative;
+    /* 确保提示框定位相对于 body */
+}
+
+
+/* 提示框容器 */
+
+.prompt-box {
+    position: fixed;
+    top: 70px;
+    /* 初始距离顶部的距离 */
+    right: -300px;
+    /* 初始位置在屏幕外 */
+    width: 300px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: right 0.3s ease, top 0.3s ease;
+    /* 平滑过渡效果 */
+}
+
+.prompt-box.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+
+/* 关闭按钮 */
+
+.prompt-box button {
+    background-color: transparent;
+    border: none;
+    color: #155724;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prompt-box.error button {
+    color: #721c24;
+}
+
+
+/* 动画效果 */
+
+.prompt-box.show {
+    right: 20px;
+    /* 最终位置在屏幕内 */
+}

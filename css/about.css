@@ -1,0 +1,103 @@
+.about-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #3498db;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.feature-icon {
+    font-size: 3em;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 1em;
+    color: #666;
+}
+
+.team-member {
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    background: rgba(52, 152, 219, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #3498db;
+    margin-right: 15px;
+    font-size: 1.3em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2ecc71;
+}
+
+.contact-method {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-method i {
+    margin-right: 10px;
+    color: #e74c3c;
+}

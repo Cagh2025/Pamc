@@ -1,0 +1,51 @@
+#jsonContainer {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 20px;
+}
+
+#loading {
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+#error {
+    color: #f92672;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.json-key {
+    color: #f92672;
+}
+
+.json-string {
+    color: #e6db74;
+}
+
+.json-number {
+    color: #ae81ff;
+}
+
+.json-boolean {
+    color: #66d9ef;
+}
+
+.json-null {
+    color: #f4bf75;
+}
+
+.indent {
+    margin-left: 20px;
+}
